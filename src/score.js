@@ -11,7 +11,7 @@ function App() {
       const response3 = await fetch('http://localhost:8080/get_scoreByCat/'+user.id);
       const data3 = await response3.json();
       setData3(data3);
-
+      console.log("hi ")
       // Vérifier que data3 est défini avant de calculer le score total
       if (data3 && Array.isArray(data3)) {
         const totalScore = data3.reduce((acc, item) => acc + item.scoreByCat, 0);
