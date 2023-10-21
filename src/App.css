@@ -1,0 +1,149 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  background-image: '../public/login.png';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-end; /* Place le contenu à droite */
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+h1 {
+  font-size: 36px; /* Taille du texte */
+  color: rgb(13, 13, 75); /* Couleur du texte */
+  text-align: center; /* Centrer le texte horizontalement */
+   /* Centrer le texte verticalement en utilisant 50% de la hauteur de la vue */
+  /* Ajuster la position verticale */
+}
+form {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 50%; /* Positionner le formulaire à 50% du haut */
+  left: 100%; /* Positionner le formulaire à 50% de la gauche */
+  transform: translate(30%, -50%);
+}
+
+
+form h2 {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+form input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  width: 100%;
+  padding: 10px;
+  background: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+/* CSS pour les alertes */
+/* CSS pour les alertes */
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.alert-success {
+  background-color: #28a745; /* Couleur verte pour succès */
+  color: #fff;
+}
+
+.alert-error {
+  background-color: #dc3545; /* Couleur rouge pour les erreurs */
+  color: #fff;
+}
+
+/* Animation pour les alertes */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
