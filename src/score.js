@@ -33,7 +33,7 @@ function App() {
               <h3>
                 {item3.cat_qst.id}- {item3.cat_qst.nom}
               </h3>
-              Score: {item3.scoreByCat}
+              Score : {item3.scoreByCat}
             </div>
           ))}
         {score !== null && <h1>Score Total : {score}</h1>}
